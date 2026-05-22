@@ -4,8 +4,8 @@
 // @version      2026-05-20
 // @description  Liste d'utilitaires pour améliorer l'utilisation du portail antenia
 // @author       ndevigne
-// @downloadURL  https://github.com/antenia-ndevigne/Portail-utilities/raw/refs/heads/main/Portail_utilities.js
-// @updateURL    https://github.com/antenia-ndevigne/Portail-utilities/raw/refs/heads/main/Portail_utilities.js
+// @downloadURL  https://github.com/antenia-ndevigne/Portail-utilities/raw/refs/heads/main/Portail_utilities.user.js
+// @updateURL    https://github.com/antenia-ndevigne/Portail-utilities/raw/refs/heads/main/Portail_utilities.user.js
 // @match        https://portail.leaderinfo.com/portail/*
 // @icon         https://portail.leaderinfo.com/portail/images/favicon2.ico
 // @grant        none
