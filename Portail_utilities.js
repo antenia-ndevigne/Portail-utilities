@@ -14,6 +14,8 @@
 (function() {
     'use strict';
 
+    console.log("test 1 de mise à jour")
+
     document.addEventListener('change', (e) => {
 
         if (e.target.classList.contains('branch-source')) {
