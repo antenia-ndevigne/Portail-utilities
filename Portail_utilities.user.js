@@ -13,6 +13,8 @@
 
 (function() {
     'use strict';
+
+    console.log("test maj 1")
     
     document.addEventListener('change', (e) => {
 
