@@ -14,19 +14,17 @@
 (function() {
     'use strict';
 
-    console.log("test maj 1")
-    
     document.addEventListener('change', (e) => {
 
         if (e.target.classList.contains('branch-source')) {
 
             const intervalle = setInterval(() => {
 
+                // Merge manuel : Cocher une révision prérempli les champs à droite
                 if (document.querySelector('#patchs-container').innerHTML != "") {
                     document.querySelectorAll(`.patch`).forEach((patch) => {
-                        const checkbox = patch.querySelector(`[type='checkbox']`)
 
-                        checkbox.addEventListener('change', (checkbox) => {
+                        patch.addEventListener('click', (event) => {
                             const commentaire = patch.querySelector(`.commentaire`).textContent
 
                             let type = commentaire.match(/(\[EVO\]|\[BUG\])/)
@@ -40,8 +38,8 @@
                             let messages = ""
 
                             document.querySelectorAll(`.patch.active`).forEach((activePatch) => {
-                                const activeCommentaire = activePatch.querySelector(`.commentaire`).textContent
-                                let message = activeCommentaire.match(/Mantis : [0-9]* : (.*)/)
+                                const activeCommentaire = activePatch.title
+                                let message = activeCommentaire.match(/Mantis[^0-9]*[0-9]* [^a-zA-Z]* ([\S \n]*)/)
                                 if (message != null) {
                                     message = message[1]
                                     if (messages != "") messages += `\n`
